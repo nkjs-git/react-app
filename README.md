@@ -1,3 +1,24 @@
+Note: This repo is part of GitOps demo repo
+
+# Creating react app docker image
+
+Create the docker image by running the below command with the version number of your wish
+
+docker build --build-arg VERSION=<version-num> -t naveen19/react-app:<version-num> .
+Ex: docker build --build-arg VERSION=1.0.0 -t naveen19/react-app:1.0.0 .
+
+Note: Here the version-num you pass will be displayed in the react web page
+
+# Deploy react app docker image
+
+Deploy the docker container by running below command
+
+docker run -it --rm -p 3000:3000 naveen19/react-app:<version-num>
+Ex: docker run -it --rm -p 3000:3000 naveen19/react-app:1.0.0
+
+
+--------------------------------- React App Guide ---------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
