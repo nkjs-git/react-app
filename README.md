@@ -5,6 +5,7 @@ Note: This repo is part of GitOps demo repo
 Create the docker image by running the below command with the version number of your wish
 
 docker build --build-arg VERSION=<version-num> -t naveen19/react-app:<version-num> .
+
 Ex: docker build --build-arg VERSION=1.0.0 -t naveen19/react-app:1.0.0 .
 
 Note: Here the version-num you pass will be displayed in the react web page
@@ -14,6 +15,7 @@ Note: Here the version-num you pass will be displayed in the react web page
 Deploy the docker container by running below command
 
 docker run -it --rm -p 3000:3000 naveen19/react-app:<version-num>
+
 Ex: docker run -it --rm -p 3000:3000 naveen19/react-app:1.0.0
 
 
