@@ -18,4 +18,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{env.VERSION}}
+      run: docker build . --file Dockerfile --tag naveen19/react-app:${{env.VERSION}}
