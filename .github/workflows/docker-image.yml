@@ -33,3 +33,5 @@ jobs:
       with:
         push: true
         tags: naveen19/react-app:${{env.VERSION}}
+        build-args: |
+          VERSION=${{env.VERSION}}
